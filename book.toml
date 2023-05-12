@@ -1,0 +1,20 @@
+[book]
+authors = ["hayzamjs"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Difuse Documentation"
+
+[preprocessor]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "2.0.0" # do not edit: managed by `mdbook-admonish install`
+
+[output]
+
+[output.html]
+additional-css = ["./css/fancybox.css","./css/mdbook-admonish.css", "./css/custom.css"]
+additional-js = ["./js/fancybox.js"]
+default-theme = "light"
+preferred-dark-theme = "light"
