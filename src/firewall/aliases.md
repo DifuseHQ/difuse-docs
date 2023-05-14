@@ -7,7 +7,7 @@ Aliases are a way to define a group of network objects, such as IP addresses (in
 Let’s explore aliases through 2 examples, one where we define a manual alias and another where we take a look at automated aliases.
 
 * <b>Manual Aliases</b>: This type of alias is where you specify the IP Address in CIDR notation (or ports in the case of a ports alias) yourself.
-* <b>Automated Aliases</b>: This type of alias is where you specify a network interface and the alias will automatically populate with the IP Addresses of the devices connected to that interface.
+* <b>Automated Aliases</b>: This type of alias is where you specify a list that is present in the system and the system automatically updates the list in a timely manner.
 
 ### Manual Aliases
 
@@ -88,7 +88,7 @@ Now once an alias has been created with one of the automated lists, it should lo
 They can also be used in the firewall in the same way as shown for manual aliases.
 
 ```admonish note
-It should be clear in the particular traffic rule whether it is of the family IPv4 or the family IPv6 if you’re using an automated list. Meaning you should set the destination or source address of the IPv4 or IPv6 family. It could even be **0.0.0.0/0** or **::0/0** for IPv4 and IPv6 respectively. This is to let the underlying engine know which version of the list to use for that particular rule.
+It should be clear in the particular traffic rule whether it is of the family IPv4 or the family IPv6 if you’re using an automated list. You can pick the family of a traffic rule in the form.
 ```
 
 ## Ports Aliases
@@ -107,4 +107,4 @@ Once you create the alias it should show up in the table like this:
   <img src="./img/9.png" width="95%" />
 </a>
 
-It’s imperative to note that you should **NOT** use **aliases** or **traffic rules** to block specific websites on the LAN, instead the **Content Filtering & Adblock** service should be used. Due to advent of services like cloudflare (which incidentally a lot of websites use) multiple hundreds or even thousand websites may share the same IP address, which makes it very hard to just block one or two websites with traffic rules.
+It’s imperative to note that you should **NOT** use **aliases** or **traffic rules** to block specific websites on the LAN, instead the **Content Filtering & Adblock** service should be used. Due to advent of services like cloudflare (which incidentally a lot of websites use) multiple hundreds or even thousands websites may share the same IP address, which makes it very hard to just block one or two websites with traffic rules.
