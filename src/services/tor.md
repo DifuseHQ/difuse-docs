@@ -16,9 +16,19 @@ The service page gives you a few options to configure the TOR client, let's go o
 
 This field is equivalent to the `VirtualAddrNetworkIPv4` option in the TOR configuration file. You can specify a virtual IPv4 subnet for the TOR client to use or just leave it as is to use the default.
 
+```admonish warning
 You should **not** use the same subnet as your local network, this will make it so that you can't access the GUI or SSH into your router, essentially locking you out.
 
+You also should **not** use the same subnet as any of your VPN clients/peers as this will make it so that you can't access them.
+```
+
 ## Virtual IPv6 Subnet
+
+```admonish warning
+You should **not** use the same subnet as your local network, this will make it so that you can't access the GUI or SSH into your router, essentially locking you out.
+
+You also should **not** use the same subnet as any of your VPN clients/peers as this will make it so that you can't access them.
+```
 
 This field is equivalent to the `VirtualAddrNetworkIPv6` option in the TOR configuration file. You can specify a virtual IPv6 subnet for the TOR client to use or just leave it as is to use the default.
 
@@ -44,3 +54,8 @@ You can visit the following onion URLs to test your connection:
 - [Mullvad VPN](http://o54hon2e2vj6c7m3aqqu6uyece65by3vgoxxhlqlsvkmacw6a7m7kiad.onion/en)
 - [Proton Mail](https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/)
 - [DuckDuckGo](https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/)
+
+
+## Troubleshooting
+
+If you have any issues with the TOR client you can disable it by toggling the disable button and then clicking on the save button. This will disable the TOR client and remove all the firewall and DNS rules. Once that is done you can enable it again and it should work.
