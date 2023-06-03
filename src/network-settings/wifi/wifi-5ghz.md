@@ -18,6 +18,12 @@ This option allows you to enable or disable the 5GHz WiFi interface.
 
 This is the name of the WiFi network that will be broadcasted by the router. You can change it to whatever you want.
 
+## Encryption Type
+
+We highly recommend that you use WPA3-PSK for the encryption type as it is the most secure. If you have older devices that don’t support WPA3 then you can use WPA2-PSK instead. WPA-PSK is **not** recommended as it is not secure.
+
+If you want you can also select mixed mode which will allow devices that support WPA3 to connect using WPA3 and devices that don’t support WPA3 to connect using WPA2.
+
 ## Country
 
 You should pick the country that you’re in for the country section, <b>never</b> choose the “00-World”. That option would force the system to apply all restrictions on the WiFi bands leaving only very few operational frequency ranges which is not optimal.
