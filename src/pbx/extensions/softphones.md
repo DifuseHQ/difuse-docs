@@ -9,7 +9,7 @@ There are some conditions that must be met in order for softphones to work prope
 - Support for UDP/TCP or TLS SIP transport protocols.
 - Support for the G.711u and G.711a audio codecs at the very least. (We recommend opus if available for better audio quality)
 - Support for STUN, TURN or ICE for NAT traversal if you are behind a NAT.
-- Optional but **highly recommended** support for SRTP for secure audio transmission.
+- Optional but **very highly recommended** support for SRTP for secure audio transmission.
 
 There are a lot of softphones on the market with only a few supporting the above mentioned functions and protocols in a reliable way. The ones that we know work well are:
 
